@@ -110,7 +110,11 @@ body {
 
 .info-icon { color: #a2a1a1; 
     font-size: 20px; 
-    cursor: help; }
+    display: flex;
+    justify-content: space-between;
+    margin-left: -2px;
+    margin-top: -35px;
+    cursor: pointer; }
 
 /* Medidor Principal */
 .main-gauge {

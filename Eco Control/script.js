@@ -220,8 +220,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // close when clicking outside content
     if (powerInfoModal) {
+
         powerInfoModal.addEventListener('click', (e) => {
-            if (e.target === powerInfoModal) {
+            if (e.target === powerInfoModal)
+                 {
                 powerInfoModal.classList.add('hidden');
             }
         });
