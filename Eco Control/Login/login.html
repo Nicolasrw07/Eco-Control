@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Control - Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <main class="login-container">
+        <header class="brand">
+            <div class="logo-wrapper">
+                <i class="fas fa-bolt-lightning logo-icon"></i>
+            </div>
+            <h1>ECO <span>CONTROL</span></h1>
+        </header>
+
+        <form id="loginForm" class="login-form">
+            <div class="input-group">
+                <label for="username">USUÁRIO:</label>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="Digite seu usuário" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="password">SENHA:</label>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+                    <button type="button" id="togglePassword" class="eye-btn">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+
+            <button type="submit" onclick = "logar(); return false" class="btn-login" value="LOGIN">LOGIN</button>
+        </form>
+
+        <footer class="form-footer">
+            <a href="#" class="link-secondary">ESQUECI MINHA SENHA</a>
+            <a href="#" class="link-primary">CRIAR CONTA</a>
+        </footer>
+    </main>
+
+</body>
+</html>
